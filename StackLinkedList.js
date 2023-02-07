@@ -16,7 +16,7 @@ class StackLL
             this.rootNode= new Node(value)
             this.count++;
         }else{
-            var temp = this.rootNode;
+            let temp = this.rootNode;
             while(temp.nextNode != null){
                 temp = temp.nextNode;
             }
@@ -26,8 +26,8 @@ class StackLL
     }
     pop()
     {
-        var temp = this.rootNode;
-        var prev;
+        let temp = this.rootNode;
+        let prev;
         while(temp.nextNode != null){
             prev=temp
             temp = temp.nextNode;
@@ -37,7 +37,7 @@ class StackLL
     }
     peek()
     {
-        var temp = this.rootNode;
+        let temp = this.rootNode;
         
         while(temp.nextNode != null){
            
@@ -48,7 +48,7 @@ class StackLL
 
     }
     printElements(){
-        var temp = this.rootNode;
+        let temp = this.rootNode;
         if(temp == null){
             console.log("Is empty!")
         }else{
@@ -59,7 +59,7 @@ class StackLL
     }
     }
 }
-var stack=new StackLL()
+let stack=new StackLL()
 stack.push(1)
 stack.push(2)
 stack.push(3)

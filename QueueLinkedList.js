@@ -25,8 +25,8 @@ class QueueLL
     }
     dequeue()
     {
-        var temp = this.rootNode;
-        var next=temp.nextNode;
+        let temp = this.rootNode;
+        let next=temp.nextNode;
         this.rootNode=next;
     }
     printElements(){
@@ -41,7 +41,7 @@ class QueueLL
     }
     }
 }
-var queue=new QueueLL()
+let queue=new QueueLL()
 queue.enqueue(1)
 queue.enqueue(2)
 queue.enqueue(3)
